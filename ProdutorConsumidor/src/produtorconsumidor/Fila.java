@@ -32,7 +32,6 @@ public class Fila {
         return fila.isEmpty();
     }
 
-    //O adicionar deveria está dentro de um while? Não
     public void adicionar(Double p) throws InterruptedException {
         try {
             fila.put(p);
@@ -45,17 +44,9 @@ public class Fila {
         }
 
     }
-//put inserção de dados
 
-    //Retirar deveria está dentro de um while? Não, por que?
     public double retirar() {
         double temp = 0;
-//        synchronized (semaforoConsumidor) {
-//            if (!estaVazio()) {
-//                temp = fila.poll();
-//            }
-//
-//        }
         try {
             if (!estaVazio()) {
             temp = fila.poll();
@@ -72,7 +63,6 @@ public class Fila {
     }
 
     public void dormir_produtor() {
-//        synchronized (semaforoProdutor) {
         try {
             synchronized (semaforoProdutor) {
 
@@ -85,7 +75,6 @@ public class Fila {
     }
 
     public void dormir_consumidor() {
-//        synchronized (semaforoConsumidor) {
         try {
             synchronized (semaforoConsumidor) {
                 semaforoConsumidor.wait();

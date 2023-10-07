@@ -34,4 +34,4 @@ public class Consumidor implements Runnable {
 }
 
 
-//Thread.sleep(2000);
+
