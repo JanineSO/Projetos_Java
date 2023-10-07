@@ -3,6 +3,11 @@ package produtorconsumidor;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ *
+ * @author Janine
+ */
+
 public class Produtor implements Runnable {
 
     private Fila fila;
