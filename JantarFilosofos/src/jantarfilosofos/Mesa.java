@@ -9,8 +9,6 @@ import java.util.ArrayList;
  */
 public class Mesa {
      
-     //Filosofo[] filosos = {new Filosofo(), new Filosofo(), new Filosofo(), new Filosofo(), new Filosofo()};
-
     Garfo[] garfos = {new Garfo(),new Garfo(), new Garfo(), new Garfo(), new Garfo()};
 
     public Mesa() {

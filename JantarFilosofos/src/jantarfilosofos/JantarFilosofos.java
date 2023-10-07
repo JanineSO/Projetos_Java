@@ -8,6 +8,7 @@ import java.util.logging.Logger;
  *
  * @author Janine
  */
+
 public class JantarFilosofos {
 
     public static void main(String[] args) {
